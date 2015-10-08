@@ -1,12 +1,12 @@
-(kicad_pcb (version 4) (host pcbnew "(after 2015-mar-04 BZR unknown)-product")
+(kicad_pcb (version 4) (host pcbnew 4.0.0-rc1-stable)
 
   (general
-    (links 398)
+    (links 440)
     (no_connects 62)
-    (area 79.394029 49.6824 184.765972 142.290001)
+    (area 86.309999 50.749999 177.850001 142.290001)
     (thickness 1.6)
-    (drawings 99)
-    (tracks 443)
+    (drawings 108)
+    (tracks 503)
     (zones 0)
     (modules 273)
     (nets 134)
@@ -2824,7 +2824,7 @@
     (pad 1 thru_hole circle (at 0 0) (size 4.064 4.064) (drill 3.048) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module PROTO_AREA (layer F.Cu) (tedit 5477040C) (tstamp 5479AE61)
+  (module PROTO_AREA (layer F.Cu) (tedit 56163E4F) (tstamp 5479AE61)
     (at 128.27 106.045)
     (fp_text reference PROTO_AREA (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2832,18 +2832,21 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
     (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 3 thru_hole rect (at 5.08 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 4 thru_hole rect (at 5.08 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 5 thru_hole rect (at 5.08 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
+    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
     (pad 9 thru_hole rect (at 2.54 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module PROTO_AREA (layer F.Cu) (tedit 5477040C) (tstamp 5479AE7A)
+  (module PROTO_AREA (layer F.Cu) (tedit 56163E3E) (tstamp 5479AE7A)
     (at 125.73 113.665)
     (fp_text reference PROTO_AREA (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2851,18 +2854,24 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
+    (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
     (pad 3 thru_hole rect (at 5.08 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 4 thru_hole rect (at 5.08 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 5 thru_hole rect (at 5.08 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 9 thru_hole rect (at 2.54 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
+    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
+    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
+    (pad 9 thru_hole rect (at 2.54 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
   )
 
-  (module PROTO_AREA (layer F.Cu) (tedit 5477040C) (tstamp 5479AE93)
+  (module PROTO_AREA (layer F.Cu) (tedit 56163E36) (tstamp 5479AE93)
     (at 125.73 121.285)
     (fp_text reference PROTO_AREA (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2870,18 +2879,24 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
+    (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
     (pad 3 thru_hole rect (at 5.08 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 4 thru_hole rect (at 5.08 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 5 thru_hole rect (at 5.08 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 9 thru_hole rect (at 2.54 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
+    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
+    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
+    (pad 9 thru_hole rect (at 2.54 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
   )
 
-  (module PROTO_AREA (layer F.Cu) (tedit 5477040C) (tstamp 5479AEAC)
+  (module PROTO_AREA (layer F.Cu) (tedit 56163E2C) (tstamp 5479AEAC)
     (at 128.27 128.905)
     (fp_text reference PROTO_AREA (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2889,14 +2904,17 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
     (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 3 thru_hole rect (at 5.08 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 4 thru_hole rect (at 5.08 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 5 thru_hole rect (at 5.08 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
+    (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
     (pad 9 thru_hole rect (at 2.54 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
   )
 
@@ -3417,7 +3435,7 @@
     (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module PROTO_AREA (layer F.Cu) (tedit 5477040C) (tstamp 5479B40C)
+  (module PROTO_AREA (layer F.Cu) (tedit 56163D7F) (tstamp 5479B40C)
     (at 118.11 118.745)
     (fp_text reference PROTO_AREA (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3427,9 +3445,12 @@
     )
     (pad 1 thru_hole rect (at 0 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 2 thru_hole rect (at 2.54 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 3 thru_hole rect (at 5.08 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 4 thru_hole rect (at 5.08 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (pad 5 thru_hole rect (at 5.08 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 3 thru_hole rect (at 5.08 2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
+    (pad 4 thru_hole rect (at 5.08 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
+    (pad 5 thru_hole rect (at 5.08 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
     (pad 6 thru_hole rect (at 2.54 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 7 thru_hole rect (at 0 7.62) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 8 thru_hole rect (at 0 5.08) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
@@ -3921,7 +3942,7 @@
     (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B5EC)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163D99) (tstamp 5479B5EC)
     (at 123.19 136.525)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3929,10 +3950,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B5F5)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163D95) (tstamp 5479B5F5)
     (at 123.19 133.985)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3940,10 +3962,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B5FE)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163D89) (tstamp 5479B5FE)
     (at 123.19 131.445)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3951,10 +3974,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B607)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163D83) (tstamp 5479B607)
     (at 123.19 128.905)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3962,10 +3986,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B619)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163E15) (tstamp 5479B619)
     (at 125.73 133.985)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3973,10 +3998,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B622)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163E03) (tstamp 5479B622)
     (at 125.73 131.445)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3984,10 +4010,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B62B)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163E19) (tstamp 5479B62B)
     (at 125.73 136.525)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3995,10 +4022,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B634)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163D9D) (tstamp 5479B634)
     (at 123.19 139.065)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4006,10 +4034,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B63D)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163E1C) (tstamp 5479B63D)
     (at 125.73 139.065)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4017,10 +4046,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B646)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163DE8) (tstamp 5479B646)
     (at 125.73 113.665)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4028,10 +4058,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B64F)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163DE4) (tstamp 5479B64F)
     (at 125.73 111.125)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4039,10 +4070,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B658)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163DE0) (tstamp 5479B658)
     (at 125.73 108.585)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4050,10 +4082,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B661)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163C21) (tstamp 5479B661)
     (at 123.19 108.585)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4061,10 +4094,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B66A)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163BDB) (tstamp 5479B66A)
     (at 123.19 111.125)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4072,10 +4106,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B673)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163C26) (tstamp 5479B673)
     (at 123.19 113.665)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4083,10 +4118,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B67C)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163C2A) (tstamp 5479B67C)
     (at 123.19 116.205)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4094,10 +4130,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B685)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163C2E) (tstamp 5479B685)
     (at 123.19 118.745)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4105,7 +4142,8 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
   (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B68E)
@@ -4207,7 +4245,7 @@
     (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B6E8)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163C1D) (tstamp 5479B6E8)
     (at 123.19 106.045)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4215,10 +4253,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 1 /3V3))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B6F1)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163DDC) (tstamp 5479B6F1)
     (at 125.73 106.045)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4226,10 +4265,11 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 6 /GND))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B6FA)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163E52) (tstamp 5479B6FA)
     (at 128.27 106.045)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4237,7 +4277,8 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
   )
 
   (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B703)
@@ -4647,7 +4688,7 @@
     (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B850)
+  (module PROTO_1PIN (layer F.Cu) (tedit 56163E21) (tstamp 5479B850)
     (at 128.27 139.065)
     (fp_text reference PROTO_1PIN (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4655,7 +4696,8 @@
     (fp_text value VAL** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS))
+    (pad 10 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask F.SilkS)
+      (net 101 /5V))
   )
 
   (module PROTO_1PIN (layer F.Cu) (tedit 5477065C) (tstamp 5479B859)
@@ -5171,12 +5213,27 @@
       (net 83 N-0000021))
   )
 
-  (gr_line (start 143.51 58.1025) (end 143.51 52.705) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 120.65 52.705) (end 120.65 58.1025) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_text "CC-BY aon@umetronics.com 2015" (at 147.066 80.645 90) (layer F.SilkS)
+  (gr_text 5V (at 128.27 104.14) (layer F.SilkS)
     (effects (font (size 0.9652 0.9652) (thickness 0.2032)))
   )
-  (gr_text "STM32 Nucleo Prototyping Shield v1.1" (at 116.84 80.645 90) (layer F.SilkS)
+  (gr_text G (at 125.73 104.14) (layer F.SilkS)
+    (effects (font (size 0.9652 0.9652) (thickness 0.2032)))
+  )
+  (gr_text 3V3 (at 124.46 104.14) (layer F.SilkS)
+    (effects (font (size 0.9652 0.9652) (thickness 0.2032)) (justify right))
+  )
+  (gr_line (start 127 140.208) (end 127 104.902) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 124.46 104.902) (end 124.46 140.208) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 121.92 140.208) (end 121.92 104.902) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 129.54 140.208) (end 121.92 140.208) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 129.54 104.902) (end 129.54 140.208) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 121.92 104.902) (end 129.54 104.902) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 143.51 58.1025) (end 143.51 52.705) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 120.65 52.705) (end 120.65 58.1025) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_text "CC BY 4.0 aon@umetronics.com 2015" (at 147.066 80.645 90) (layer F.SilkS)
+    (effects (font (size 0.9652 0.9652) (thickness 0.2032)))
+  )
+  (gr_text "STM32 Nucleo Prototyping Shield v1.2" (at 116.84 80.645 90) (layer F.SilkS)
     (effects (font (size 1.143 1.143) (thickness 0.2032)))
   )
   (gr_text PF4 (at 170.688 103.505) (layer F.SilkS)
@@ -5421,6 +5478,26 @@
   (gr_arc (start 118.745 52.705) (end 118.745 50.8) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 102.87 50.8) (end 114.935 50.8) (angle 90) (layer Edge.Cuts) (width 0.1))
 
+  (segment (start 123.19 131.445) (end 123.19 133.985) (width 0.3048) (layer F.Cu) (net 1) (status C00000))
+  (segment (start 123.19 133.985) (end 123.19 136.525) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F88) (status C00000))
+  (segment (start 123.19 136.525) (end 123.19 139.065) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F89) (status C00000))
+  (segment (start 123.19 104.902) (end 123.19 106.045) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F5C))
+  (segment (start 122.428 104.14) (end 123.19 104.902) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F5A))
+  (segment (start 117.348 104.14) (end 122.428 104.14) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F57))
+  (segment (start 116.078 102.87) (end 117.348 104.14) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F4D))
+  (segment (start 116.078 76.454) (end 116.078 102.87) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F3B))
+  (segment (start 115.189 75.565) (end 116.078 76.454) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F34))
+  (segment (start 113.665 75.565) (end 115.189 75.565) (width 0.3048) (layer F.Cu) (net 1))
+  (segment (start 123.19 106.045) (end 123.19 108.585) (width 0.3048) (layer F.Cu) (net 1))
+  (segment (start 123.19 108.585) (end 123.19 111.125) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EF9))
+  (segment (start 123.19 111.125) (end 123.19 113.665) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EFA))
+  (segment (start 123.19 113.665) (end 123.19 116.205) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EFB))
+  (segment (start 123.19 116.205) (end 123.19 118.745) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EFC))
+  (segment (start 123.19 118.745) (end 123.19 121.285) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EFD))
+  (segment (start 123.19 121.285) (end 123.19 123.825) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EFE))
+  (segment (start 123.19 123.825) (end 123.19 126.365) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163EFF))
+  (segment (start 123.19 126.365) (end 123.19 128.905) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F00))
+  (segment (start 123.19 128.905) (end 123.19 139.065) (width 0.3048) (layer F.Cu) (net 1) (tstamp 56163F01))
   (segment (start 111.125 75.565) (end 113.665 75.565) (width 0.3048) (layer F.Cu) (net 1) (tstamp 547990D5))
   (segment (start 102.87 75.565) (end 111.125 75.565) (width 0.3048) (layer F.Cu) (net 1))
   (segment (start 172.085 95.885) (end 174.625 95.885) (width 0.3048) (layer F.Cu) (net 2) (tstamp 54799133))
@@ -5431,6 +5508,26 @@
   (segment (start 89.535 65.405) (end 92.075 65.405) (width 0.3048) (layer F.Cu) (net 4))
   (segment (start 111.125 62.865) (end 113.665 62.865) (width 0.3048) (layer F.Cu) (net 5) (tstamp 547990E8))
   (segment (start 102.87 62.865) (end 111.125 62.865) (width 0.3048) (layer F.Cu) (net 5))
+  (segment (start 125.73 139.065) (end 125.73 136.525) (width 0.3048) (layer F.Cu) (net 6) (status C00000))
+  (segment (start 125.73 136.525) (end 125.73 133.985) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F8F) (status C00000))
+  (segment (start 125.73 133.985) (end 125.73 131.445) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F90) (status C00000))
+  (segment (start 125.73 131.445) (end 125.73 128.905) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F91) (status C00000))
+  (segment (start 125.73 128.905) (end 125.73 126.365) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F92) (status C00000))
+  (segment (start 125.73 126.365) (end 125.73 123.825) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F93) (status C00000))
+  (segment (start 125.73 123.825) (end 125.73 121.285) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F94) (status C00000))
+  (segment (start 125.73 121.285) (end 125.73 118.745) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F95) (status C00000))
+  (segment (start 125.73 118.745) (end 125.73 116.205) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F96) (status C00000))
+  (segment (start 125.73 116.205) (end 125.73 113.665) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F97) (status C00000))
+  (segment (start 125.73 113.665) (end 125.73 111.125) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F98) (status C00000))
+  (segment (start 125.73 111.125) (end 125.73 108.585) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F99) (status C00000))
+  (segment (start 125.73 108.585) (end 125.73 106.045) (width 0.3048) (layer F.Cu) (net 6) (tstamp 56163F9A) (status C00000))
+  (segment (start 113.665 80.645) (end 114.935 80.645) (width 0.3048) (layer B.Cu) (net 6))
+  (segment (start 125.73 105.156) (end 125.73 106.045) (width 0.3048) (layer B.Cu) (net 6) (tstamp 56163F15))
+  (segment (start 125.222 104.648) (end 125.73 105.156) (width 0.3048) (layer B.Cu) (net 6) (tstamp 56163F14))
+  (segment (start 117.094 104.648) (end 125.222 104.648) (width 0.3048) (layer B.Cu) (net 6) (tstamp 56163F12))
+  (segment (start 115.57 103.124) (end 117.094 104.648) (width 0.3048) (layer B.Cu) (net 6) (tstamp 56163F10))
+  (segment (start 115.57 81.28) (end 115.57 103.124) (width 0.3048) (layer B.Cu) (net 6) (tstamp 56163F0F))
+  (segment (start 114.935 80.645) (end 115.57 81.28) (width 0.3048) (layer B.Cu) (net 6) (tstamp 56163F0E))
   (segment (start 92.075 80.645) (end 100.33 80.645) (width 0.3048) (layer F.Cu) (net 6) (tstamp 54799093))
   (segment (start 89.535 80.645) (end 92.075 80.645) (width 0.3048) (layer F.Cu) (net 6))
   (segment (start 111.125 83.185) (end 113.665 83.185) (width 0.3048) (layer F.Cu) (net 6) (tstamp 547990C9))
@@ -5778,6 +5875,26 @@
   (segment (start 117.7648 133.096) (end 119.38 131.4808) (width 0.1524) (layer F.Cu) (net 100) (tstamp 5479ACB1))
   (segment (start 113.0808 133.096) (end 117.7648 133.096) (width 0.1524) (layer F.Cu) (net 100) (tstamp 5479ACB2))
   (segment (start 112.746 133.4308) (end 113.0808 133.096) (width 0.1524) (layer F.Cu) (net 100) (tstamp 5479ACB3))
+  (segment (start 128.27 106.045) (end 128.27 108.585) (width 0.3048) (layer F.Cu) (net 101) (status C00000))
+  (segment (start 128.27 108.585) (end 128.27 111.125) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163F9D) (status C00000))
+  (segment (start 128.27 111.125) (end 128.27 113.665) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163F9E) (status C00000))
+  (segment (start 128.27 113.665) (end 128.27 116.205) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163F9F) (status C00000))
+  (segment (start 128.27 116.205) (end 128.27 118.745) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA0) (status C00000))
+  (segment (start 128.27 118.745) (end 128.27 121.285) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA1) (status C00000))
+  (segment (start 128.27 121.285) (end 128.27 123.825) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA2) (status C00000))
+  (segment (start 128.27 123.825) (end 128.27 126.365) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA3) (status C00000))
+  (segment (start 128.27 126.365) (end 128.27 128.905) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA4) (status C00000))
+  (segment (start 128.27 128.905) (end 128.27 131.445) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA5) (status C00000))
+  (segment (start 128.27 131.445) (end 128.27 133.985) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA6) (status C00000))
+  (segment (start 128.27 133.985) (end 128.27 136.525) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA7) (status C00000))
+  (segment (start 128.27 136.525) (end 128.27 139.065) (width 0.3048) (layer F.Cu) (net 101) (tstamp 56163FA8) (status C00000))
+  (segment (start 128.27 106.045) (end 128.27 104.14) (width 0.3048) (layer B.Cu) (net 101))
+  (segment (start 115.443 78.105) (end 113.665 78.105) (width 0.3048) (layer B.Cu) (net 101) (tstamp 56163F25))
+  (segment (start 116.84 79.502) (end 115.443 78.105) (width 0.3048) (layer B.Cu) (net 101) (tstamp 56163F1D))
+  (segment (start 116.84 103.124) (end 116.84 79.502) (width 0.3048) (layer B.Cu) (net 101) (tstamp 56163F1B))
+  (segment (start 117.348 103.632) (end 116.84 103.124) (width 0.3048) (layer B.Cu) (net 101) (tstamp 56163F1A))
+  (segment (start 127.762 103.632) (end 117.348 103.632) (width 0.3048) (layer B.Cu) (net 101) (tstamp 56163F19))
+  (segment (start 128.27 104.14) (end 127.762 103.632) (width 0.3048) (layer B.Cu) (net 101) (tstamp 56163F18))
   (segment (start 111.125 78.105) (end 113.665 78.105) (width 0.3048) (layer F.Cu) (net 101) (tstamp 547990D2))
   (segment (start 102.87 78.105) (end 111.125 78.105) (width 0.3048) (layer F.Cu) (net 101))
   (segment (start 124.714 100.965) (end 128.27 100.965) (width 0.3048) (layer F.Cu) (net 102) (tstamp 54799066))
